@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinVio</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="/public/script.js"></script>
+</head>
+
+<body class="iph-anim">
+    <div class="info-box">
+        <span class="info-box-text" id="info-box-text">Click to get flat 70% Discount.</span>
+        <button class="exit-info">
+            <div class="exit-info-line exit-info-line-1"></div>
+            <div class="exit-info-line exit-info-line-2"></div>
+        </button>
+        <div class="info-elements">
+            <button class="primary-black-btn">FinVio Super Offs'</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="login">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter FinV Username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="ID Password" required>
+            <label for="fvid" >FVID (optional)</label>
+            <input type="text" id="fvid" name="fvid" placeholder="In the form of 6b---">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <nav class="nav-discover">
+        <h1 class="logo">FinVio</h1>
+        <div class="menu-container">
+            <div class="menu">
+                <div class="line" id="line"></div>
+                <div class="line" id="line"></div>
+                <div class="line" id="line"></div>
+            </div>
+            <div class="upg">
+                <button class="upgtplus" id="upgradetoplus">Upgrade to Plus</button>
+            </div>
+        </div>
+    </nav>
+    <div class="promo">
+        <h2><span style="color: purple;">Dive</span> Deep into your<br><span style="color: purple;">Finance</span>.</h2>
+    </div>
+    <div class="start-financing">
+        <button class="install-nr">Start Financing</button>
+        <div class="balls ball-1"></div>
+        <div class="balls ball-2"></div>
+    </div>
+    <div class="discover">
+        <button class="btn-discover">
+            Discover the Top Questions asked to FinVio<br><span style="font-size: 2em; font-weight: 600;">or</span><br>
+            <input type="text" placeholder="Type Your Own Question" class="qna-text">
+            <button class="primary-black-btn-global" id="send-req-btn">Send</button>
+        </button>
+    </div>
+    <div class="secure-info">
+        <h2>See how we make this <span class="purple-text">Secure</span><a href="/secure" class="blue-link">↗</a></h2>
+    </div>    
+    <div id="container">
+        <h1>All The Settings in one Place</h1>
+        <button id="explore-setts">Explore</button>
+    </div>
+    <div class="m-cont-1">
+        <img src="/_757582c9-c070-4b89-9e87-cd1d62b0bced.jfif">
+        <h2>Don't find Yourself roaming around on the web, Use FinVio</h2>
+    </div>
+    <div class="m-cont-1" id="m-cont-1">
+        <img src="/_757582c9-c070-4b89-9e87-cd1d62b0bced.jfif">
+        <h2>Don't find Yourself roaming around on the web, Use FinVio</h2>
+    </div>
+
+    <script>
+        // Define a function that will run after the page is loaded
+        function init() {
+            // Get the div element
+            var mCont1 = document.getElementById("m-cont-1");
+
+            // Get the initial position of the div
+            var mCont1Pos = mCont1.offsetTop;
+
+            // Add a scroll event listener to the window
+            window.addEventListener("scroll", function () {
+                // Get the current scroll position of the window
+                var scrollPos = window.pageYOffset;
+
+                // Check if the div is in the viewport
+                if (scrollPos > mCont1Pos - window.innerHeight) {
+                    // Add a class to the div that triggers the animation
+                    mCont1.classList.add("animate");
+                }
+            });
+        }
+
+        // Assign the init function to the window.onload event
+        window.onload = init;
+    </script>
+
+    <style>
+        .m-cont-1 {
+            position: relative;
+            width: 100%;
+            opacity: 0;
+            /* Hide the div initially */
+            transition: opacity 1s;
+            /* Add a transition effect for opacity */
+        }
+
+        .m-cont-1 img {
+            width: 100%;
+            height: auto;
+            /* filter: blur(6px); */
+            user-select: none;
+        }
+
+        .m-cont-1 h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            background-color: white;
+            font-size: 4em;
+            font-weight: 100;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .animate {
+            opacity: 1;
+            /* Show the div when it is in the viewport */
+        }
+    </style>
+
+    <div class="animation-s">
+        <div class="linex l-1"></div>
+        <div class="linex l-2"></div>
+        <div class="linex l-3"></div>
+        <div class="linex l-4"></div>
+        <div class="linex l-1"></div>
+        <div class="linex l-2"></div>
+        <div class="linex l-3"></div>
+        <div class="linex l-4"></div>
+        <div class="linex l-1"></div>
+        <div class="linex l-2"></div>
+        <div class="linex l-3"></div>
+        <div class="linex l-4"></div>
+        <div class="linex l-1"></div>
+        <div class="linex l-2"></div>
+        <div class="linex l-3"></div>
+        <div class="linex l-4"></div>
+        <span class="end-span">END</span>
+    </div>
+</body>
+
+</html>

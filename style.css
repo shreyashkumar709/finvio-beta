@@ -4,6 +4,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -248,73 +251,6 @@ nav h1 {
 #send-req-btn:hover {
     background-color: black;
     color: white;
-}
-
-@media only screen and (max-width: 900px) {
-    #send-req-btn {
-        visibility: hidden;
-    }
-
-    .qna-text {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .upg {
-        position: relative;
-        margin-top: 9rem;
-        left: 0rem;
-    }
-
-    .upg .upgtplus {
-        width: 100vw;
-        height: 6vh;
-        visibility: hidden;
-    }
-
-    #upgradetoplus {
-        background: transparent;
-        backdrop-filter: blur(10px);
-        color: white;
-        border-radius: 6rem;
-        z-index: 69;
-        border: 1px solid #fff;
-    }
-
-    .login {
-        padding-top: 18rem;
-        height: 100vh;
-    }
-
-    .login h1 {
-        color: white;
-        margin-top: 50%;
-        font-weight: 600;
-    }
-    .balls {
-        display: none;
-    }
-    #explore-setts {
-        padding: 5px 10px;
-        height: 4rem;
-    }
-    .container {
-        text-align: center;
-        padding: 3rem;
-    }
-    .container h1 {
-        padding-left: 3rem;
-        width: 100vw;
-        text-align: center;
-    }
-    .end-span {
-        justify-content: left;
-        padding: 8rem;
-
-        background: linear-gradient(to right, purple, violet);
-        display: block;
-        border-radius: 1rem;
-    }
 }
 
 .upg {
@@ -603,30 +539,31 @@ nav h1 {
     }
 }
 .animation-s {
-    padding: 6rem;
+    padding: 1rem;
     overflow: hidden;
+
 }
 .animation-s .linex {
     height:2rem;
     width: 100%;
     margin: 8px;
-    border-radius: 6rem;
-    transition-duration: 1s;
+    /* border-radius: 6rem; */
+    transition-duration: 0.2s;
     box-shadow: 0 6px 10px black;
 
 }
 .animation-s .linex:hover {
-    padding: 4rem;
+    background-color: black;
 }
-.animation-s .l-1,.l-3 {
-    animation: min-1 9s infinite;
-}
+/* .animation-s .l-1,.l-3 {
+    /* animation: min-1 9s infinite; */
+/* } */
 
-.animation-s .l-2,.l-4 {
-    animation: min-2 9s infinite;
-}
+/* .animation-s .l-2,.l-4 { */
+    /* animation: min-2 9s infinite;1] */
+/* } */
 .end-span {
-    font-size: 16em;
+    font-size: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -634,7 +571,6 @@ nav h1 {
     text-transform: capitalize;
     text-transform: capitalize;
 
-    box-shadow: 0 6px 10px black;
 
 }
 @keyframes min-1 {
@@ -657,5 +593,40 @@ nav h1 {
     }
     100% {
         transform: translateX(0px);
+    }
+}
+@media only screen and (max-width:850px) {
+    .secure-info {
+        text-align: center;
+        padding: 6rem;
+    }
+    .secure-info .purple-text {
+        font-size: 2em;
+        font-family: Calibri;
+        font-weight: 100;
+    }
+    .balls {
+        display: none;
+    }
+    #send-req-btn {
+        display: none;
+    }
+    .qna-text {
+        border-radius: 0px;
+        transition-duration: 0.4s;
+    }
+    .qna-text:focus {
+        transform: scale(1.5);
+        left: 1rem;
+    }
+    .promo {
+        padding: 16rem;
+    }
+    .upg {
+        padding: 0;
+        right: 5rem;
+    }
+    .menu {
+        right: 1rem;
     }
 }

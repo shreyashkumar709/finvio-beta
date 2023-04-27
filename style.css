@@ -14,22 +14,28 @@ nav {
     display: flex;
     height: 5vh;
     transition-duration: 0.4s;
+
+    position: fixed;
+    
 }
 .nav-discover {
     padding: 20px;
-    background-color: black;
+    background-color: transparent;
     display: flex;
     height: 5vh;
+    z-index: 35;
     transition-duration: 0.4s;
 }
 nav h1 {
-    color: white;
-    font-size: 2em;
+    color: black;
+    font-size: 2.5em;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .menu {
-    position: absolute;
-    right: 20px;
+    position: fixed;
+    right: 60px;
     top: 15px;
     width: 25px;
     height: 25px;
@@ -65,6 +71,8 @@ nav h1 {
     border-radius: 4px;
     margin: 14px;
     padding: 2px;
+    backdrop-filter: blur(20px);
+
 }
 
 .logo {
@@ -228,7 +236,7 @@ nav h1 {
     border-radius: 20px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    margin-top: 7.2rem;
+    margin-top: 7.25rem;
     background-color: white;
     color: black;
     border-top: 0.1px solid #ccc;
@@ -283,11 +291,35 @@ nav h1 {
         margin-top: 50%;
         font-weight: 600;
     }
+    .balls {
+        display: none;
+    }
+    #explore-setts {
+        padding: 5px 10px;
+        height: 4rem;
+    }
+    .container {
+        text-align: center;
+        padding: 3rem;
+    }
+    .container h1 {
+        padding-left: 3rem;
+        width: 100vw;
+        text-align: center;
+    }
+    .end-span {
+        justify-content: left;
+        padding: 8rem;
+
+        background: linear-gradient(to right, purple, violet);
+        display: block;
+        border-radius: 1rem;
+    }
 }
 
 .upg {
     position: fixed;
-    right: 6rem;
+    right: 9rem;
     top: 1.6rem;
 }
 
@@ -578,19 +610,20 @@ nav h1 {
     height:2rem;
     width: 100%;
     margin: 8px;
-    background-color: black;
     border-radius: 6rem;
     transition-duration: 1s;
+    box-shadow: 0 6px 10px black;
+
 }
 .animation-s .linex:hover {
     padding: 4rem;
 }
 .animation-s .l-1,.l-3 {
-    animation: min-1 2s infinite;
+    animation: min-1 9s infinite;
 }
 
 .animation-s .l-2,.l-4 {
-    animation: min-2 2s infinite;
+    animation: min-2 9s infinite;
 }
 .end-span {
     font-size: 16em;
@@ -600,6 +633,8 @@ nav h1 {
     text-transform: capitalize;
     text-transform: capitalize;
     text-transform: capitalize;
+
+    box-shadow: 0 6px 10px black;
 
 }
 @keyframes min-1 {

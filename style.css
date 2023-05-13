@@ -408,6 +408,7 @@ nav h1 {
     align-items: center;
     border-top: 1px solid #ccc;
     overflow: scroll;
+    padding: 30px;
 }
 .secure-info::-webkit-scrollbar {
     display: none;

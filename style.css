@@ -347,7 +347,6 @@ nav h1 {
     user-select: none;
     z-index: 4;
     backdrop-filter: blur(70px);
-    visibility: hidden;
 }
 
 .login h1 {

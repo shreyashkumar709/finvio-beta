@@ -636,12 +636,6 @@ nav h1 {
         height: max-content;
         width: 200vw;
     }
-    .start-financing {
-        width: 100vw;
-    }
-    .discover {
-        width: 150%;
-    }
     .discover button input{
         border-radius: 4rem;
     }

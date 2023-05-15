@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinVio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
@@ -23,15 +24,15 @@
     </div>
     <div class="overlay"></div>
     <div class="login">
-        <h1>Login</h1>
-        <form>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter FinV Username" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="ID Password" required>
-            <label for="fvid" >FVID (optional)</label>
-            <input type="text" id="fvid" name="fvid" placeholder="In the form of 6b---">
-            <button type="submit" id="submit">Submit</button>
+        <h1 class="text-center text-gray-700 text-3xl font-light">Login</h1>
+        <form class="flex flex-col gap-4 p-5">
+            <label for="username" class="font-light">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter FinV Username" required class="py-2 px-4 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+            <label for="password" class="font-light">Password</label>
+            <input type="password" id="password" name="password" placeholder="ID Password" required class="py-2 px-4 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+            <label for="fvid" class="font-light">FVID (optional)</label>
+            <input type="text" id="fvid" name="fvid" placeholder="In the form of 6b---" class="py-2 px-4 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+            <button type="submit" id="submit" class="py-2 px-4 bg-black text-white rounded-md cursor-pointer">Submit</button>
         </form>
     </div>
     <nav class="nav-discover">
